@@ -1,6 +1,8 @@
 $(function(){
 
-    
+    $('a[href="#"]').click(function(ignore){
+        ignore.preventDefault(); });
+
     //헤더 영역
 
     let lastScroll = 0;
@@ -306,14 +308,16 @@ $(function(){
     })
 
 
+
+
     // 네비게이션
     
     $('.content-right .nav-item a').click(function(e){
         e.preventDefault();
 
-        target = $(this).data('target');
-        $('.nav-item a').removeClass('active');
+        target = $(this).attr('href');
         $(this).addClass('active');
+        $('.nav-item a').removeClass('active');
 
         gsap.to(window, {duration: 0.5, scrollTo: target});
     })

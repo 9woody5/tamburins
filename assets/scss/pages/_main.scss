@@ -52,7 +52,6 @@
         top: 0; left: 0;
         width: 100%;
         height: calc(100vh - 20px);
-        // background: #493820;
         overflow: hidden;
         border-radius: 0 0 40px 40px;
         &.active{
@@ -68,7 +67,6 @@
             width: 100%;
             height: 100%;
             background: url(../img/main-visual2.jpg) no-repeat center;
-            // background-size: 800px 800px;
             object-fit: cover;
         }
 
@@ -107,7 +105,6 @@
         }
         
     }
-    
 }
 .sc-about{
     background: #b4b4b4bc;
@@ -151,9 +148,6 @@
             width: 80px; height: 80px;
             margin: 0 10px;
             vertical-align: bottom;
-            // opacity: 0;
-            // transition: transform .7s;
-            // transform: scale(0);
             @include tablet{
                 width: 60px; height: 60px;
             }
@@ -262,7 +256,6 @@
             @include tablet{
                 justify-content: space-evenly;
                 align-items: flex-end;
-                // flex: 1;
                 max-width: 440px;
                 margin-left: 40px;
             }
@@ -375,7 +368,7 @@
             position: absolute;
             font-size: 50px;
             color: #fff;
-            top: 0;right: 30px;
+            top: 0; right: 0;
         }
         .video-wrapper{
             position: relative;
@@ -581,11 +574,6 @@
         @include mobile{
             width: 100%;
         }
-        .content-inner{
-            @include mobile{
-                // position: relative;
-            }
-        }
         .content-item{
             padding: 100px 120px;
             position: relative;
@@ -597,7 +585,6 @@
             }
             @include mobile{
                 padding: 40px 20px 20px;
-                // position: unset;
             }
         }
         .title{
@@ -616,7 +603,6 @@
             font-size: 17px; 
             line-height: 1.4; 
             text-align: center;
-            // @include mobile{display: none;}
         }
         .img-wrap{
             width: 240px;
@@ -660,14 +646,15 @@
             transform: translateX(-50%);
             background: rgba(0,0,0,.1);
             color: #000;
-            transition: color .5s ease-in-out;
-            i{color: #000;}
+            transition: color .3s;
+            i{
+                color: #000;
+                transition: color .3s;
+            }
             &:hover{
+                background: #000;
                 color: #fff;
                 i{color: #fff;}
-            }
-            @include mobile{
-                // margin-top: 0;
             }
         }
     }
@@ -677,7 +664,6 @@
         top: 0; left: 0;;
         width: 100%;
         height: 100vh;
-        // height: 400vh;
         overflow: hidden;
         clip: rect(0,auto,auto,0);
         @include mobile{
@@ -724,7 +710,6 @@
             flex-direction: column;
         }
         .content-item{
-            // position: sticky;
             position: absolute;
             top: 0;
             width: 100%;

@@ -73,17 +73,14 @@ $(function(){
         if(target == '#hover01'){
             $('.btn-packaging').addClass('open');
             $('.dimmed').css('display','block');
-        } else{
-            $('.btn-packaging').removeClass('open');
-        }
-        
-        if(target == '#hover02'){
+        } else if (target == '#hover02'){
             $('.btn-search').addClass('open');
             $('.dimmed').css('display','block');
-
-        }else{
+        } else{
+            $('.btn-packaging').removeClass('open');
             $('.btn-search').removeClass('open');
         }
+        
     }); 
 
 
@@ -149,7 +146,6 @@ $(function(){
     gsap.set(".main-txt span", {
         yPercent: 110,
         transformStyle: "preserve-3d",
-        // opacity: 0,
         rotationX: 90,
         transformOrigin: "0% 80% -100%",
     });
@@ -227,7 +223,6 @@ $(function(){
             scrub:1,
             // markers: true,
         },
-        // stagger:0.2,
         width:0
     })
     
@@ -334,7 +329,7 @@ $(function(){
 
     function findPosition(){
         $('.content-left .content-item').each(function(){
-            if( ($(this).offset().top - $(window).scrollTop() ) < 20){
+            if( ($(this).offset().top - $(window).scrollTop() ) < 10){
                 link.removeClass('active');
                 $('#navbar').find('[data-target="'+ $(this).attr('id') +'"]').addClass('active');
             }

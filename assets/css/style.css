@@ -1049,17 +1049,17 @@ body.hide {
   transition: 0.5s;
 }
 
-.group-sub.brands a:hover {
+.group-sub.products a:hover {
   background: rgba(98, 98, 98, 0.3568627451);
 }
-.group-sub.brands a:hover .cate::before {
+.group-sub.products a:hover .cate::before {
   color: #000;
 }
-.group-sub.brands a:hover i {
+.group-sub.products a:hover i {
   background: #000;
   color: #e7e5e2;
 }
-.group-sub.brands.active {
+.group-sub.products.active {
   transform: translateY(0);
 }
 
@@ -1741,7 +1741,7 @@ body.hide {
   font-size: 50px;
   color: #fff;
   top: 0;
-  right: 30px;
+  right: 0;
 }
 .sc-expertise .video-modal .video-wrapper {
   position: relative;
@@ -2065,12 +2065,14 @@ body.hide {
   transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.1);
   color: #000;
-  transition: color 0.5s ease-in-out;
+  transition: color 0.3s;
 }
 .sc-brands .content-left .link-more i {
   color: #000;
+  transition: color 0.3s;
 }
 .sc-brands .content-left .link-more:hover {
+  background: #000;
   color: #fff;
 }
 .sc-brands .content-left .link-more:hover i {

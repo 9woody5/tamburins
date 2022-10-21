@@ -1,5 +1,4 @@
 .pack-area{
-    // display: none;
     padding-top: 120px;
     z-index: 1;
     position: fixed;
@@ -315,12 +314,10 @@
     @include tablet{
         min-width: 768px;
         position: absolute;
-        // width: auto;
     }
     @include mobile{
         min-width: 320px;
         position: absolute;
-        // width: auto;
     }
 }
 
@@ -745,7 +742,7 @@
         transition: 0.5s;
     }
 }
-.group-sub.brands{
+.group-sub.products{
     a:hover{
         background: #6262625b;
         .cate{
